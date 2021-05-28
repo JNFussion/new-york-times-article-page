@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
-    <title>New York Times</title>
+  <title>New York Times</title>
 </head>
 
 <body>
@@ -16,31 +16,34 @@
   <header class="main-header">
     <button class="btn-navigation"><i class="fas fa-bars"></i></button>
     <button class="btn-navigation"><i class="fas fa-search"></i></button>
-    <a href="https://www.nytimes.com/section/science/space" class="section-link">space & cosmos</a>
+    <a href="https://www.nytimes.com/section/science/space" class="category-link">space & cosmos</a>
     <a href="https://www.nytimes.com/" class="home-page-link">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/The_New_York_Times_Logo.svg" alt="The New York Times logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/The_New_York_Times_Logo.svg"
+        alt="The New York Times logo">
     </a>
-    <button class="btn-auth">subscribe now</button>
-    <button class="btn-auth">log in</button>
+    <button class="btn-user">subscribe now</button>
+    <button class="btn-user">log in</button>
   </header>
 
-  <article>
-    <h2>Space Ripples Reveal Big Bang’s Smoking Gun</h2>
-    <nav>
-      <a href=""><i class="fab fa-facebook-f"></i></a>
-      <a href=""><i class="fab fa-whatsapp"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-      <a href=""><i class="fas fa-envelope"></i></a>
-      <a href=""><i class="fas fa-share"></i></a>
-      <a href=""><i class="far fa-bookmark"></i></a>
-      <a href=""><i class="far fa-comment-alt"></i></a>
+  <article class="grid">
+    <h1 class="article-title">Space Ripples Reveal Big Bang’s Smoking Gun</h1>
+    <nav class="share-navbar">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fas fa-share"></i></a></li>
+        <li><a href="#" class="link-icon-alt"><i class="far fa-bookmark"></i></a></li>
+        <li><a href="#" class="link-icon-alt"><i class="far fa-comment-alt"></i></a></li>
+      </ul>
     </nav>
 
     <figure>
       <img
         src="https://static01.nyt.com/images/2014/03/18/science/space/18cosmos/18cosmos-superJumbo.jpg?quality=90&auto=webp"
         alt="">
-      <figcaption>
+      <figcaption class="caption">
         Alan Guth was one of the first physicists to hypothesize the existence of inflation,
         which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8
         billion years ago.Credit...
@@ -54,7 +57,7 @@
     </div>
 
     <div class="published-date">
-      <time time="2014-03-13">March 17, 2014</time>
+      <time datetime="2014-03-13">March 17, 2014</time>
     </div>
 
     <p>CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a
@@ -62,7 +65,7 @@
       stayed up late with his notebook and equations, venturing far beyond the world of known physics.
     </p>
 
-    <div class="sign-up">
+    <div class="sing-up-divider">
       <p>
         <strong>Sign up for Science Times:</strong> Get stories that capture the wonders of nature, the cosmos and the
         human body.
@@ -94,45 +97,48 @@
       known undramatically as inflation, looked right.
     </p>
     <p>
-      Reaching back across 13.8 billion years to <a href="">the first sliver of cosmic time</a> with telescopes at the
+      Reaching back across 13.8 billion years to <a
+        href="https://www.youtube.com/watch?v=ZJYc9YmKIO8&amp;feature=youtu.be">the first sliver of cosmic time</a> with
+      telescopes at the
       South Pole,
       a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples in
       the fabric of space-time — so-called
-      <a href="">gravitational waves</a> — the signature of a universe being wrenched violently apart when it was
+      <a href="http://www.nytimes.com/2016/02/12/science/ligo-gravitational-waves-black-holes-einstein.html">gravitational
+        waves</a> — the signature of a universe being wrenched violently apart when it was
       roughly a trillionth of a trillionth of a trillionth of a second old.
       They are the long-sought smoking-gun evidence of inflation, proof, Dr. Kovac and his colleagues say, that Dr. Guth
       was correct.
     </p>
 
-    <div class="editor-picks">
-      <h2>Editors’ Picks</h2>
+    <div class="side-recommendations">
+      <h2 class="side-recommendations-header">Editors’ Picks</h2>
       <article>
         <img
           src="https://static01.nyt.com/images/2021/05/27/fashion/24SNEAKERCOLORS-sacai-SUB/24SNEAKERCOLORS-sacai-SUB-square640.jpg?quality=75&auto=webp&disable=upscale&width=350"
-          alt="">
-        <p>
+          alt="" class="side-recommendations-picture">
+        <h2 class="side-recommendations-item-title">
           The Secret Psychology of Sneaker Colors
-        </p>
+        </h2>
       </article>
       <article>
         <img
           src="https://static01.nyt.com/images/2021/05/25/multimedia/00xp-nomad-tax-2/00xp-nomad-tax-2-square640.jpg?quality=75&auto=webp&disable=upscale&width=350"
-          alt="">
-        <p>
+          alt="" class="side-recommendations-picture">
+        <h2 class="side-recommendations-item-title">
           So, You Want To Become a Digital Nomad
-        </p>
+        </h2>
       </article>
       <article>
         <img
           src="https://static01.nyt.com/images/2021/05/30/arts/30donor-1/merlin_187030248_d88cb361-49f0-4bf5-8912-47cb9c5562b7-square640.jpg?quality=75&auto=webp&disable=upscale&width=350"
-          alt="">
-        <p>
+          alt="" class="side-recommendations-picture">
+        <h2 class="side-recommendations-item-title">
           They've Given $6 Million to the Arts. No One Knew Them, Until Now.
-        </p>
+        </h2>
       </article>
     </div>
 
-    <div class="thanks-subscribe">
+    <div class="subscribe-divider">
       <div>Thanks for reading The Times.</div>
       <div><a href="https://www.nytimes.com/subscription?campaignId=9L9L9">Subscribe to The Times</a></div>
     </div>
@@ -180,51 +186,51 @@
     </p>
 
     <article class="info-section">
-      <h2>The Theory of Inflation</h2>
-      <p>
+      <h2 class="info-title">The Theory of Inflation</h2>
+      <p class="info-subtitle">
         Astronomers have found evidence to support the theory of inflation, which explains how the universe expanded so
         uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago.
       </p>
       <div class="info-content">
         <img
           src="https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png"
-          alt="">
-        <p>
+          alt="" class="info-picture">
+        <p class="info-description item-1">
           <strong>THE UNIVERSE</strong> is just under 14 billion years old. From our position in the Milky Way galaxy,
           we can observe a sphere that is now about 92 billion light-years across. But there's a mystery. Wherever we
           look, the universe has an even temperature.
         </p>
-        <p>
+        <p class="info-description item-2">
           <strong>NOT ENOUGH TIME</strong> The universe is not old enough for light to have traveled the vast distance
           from one side of the universe to the other, and there has not been enough time for scattered patches of hot
           and cold to mix into an even temperature.
         </p>
-        <p>
+        <p class="info-description item-3">
           <strong>DISTANT COFFEE</strong> At a smaller scale, imagine using a telescope to look a mile in one direction.
           You see a coffee cup, and from the amount of steam, you can estimate its temperature and how much it has
           cooled.
         </p>
-        <p>
+        <p class="info-description item-4">
           <strong>COFFEE EVERYWHERE</strong> Now turn around and look a mile in the other direction. You see a similar
           coffee cup, at exactly the same temperature. Coincidence? Maybe. But if you see a similar cup in every
           direction, you might want to look for another explanation.
         </p>
-        <p>
+        <p class="info-description item-5">
           <strong>STILL NOT ENOUGH TIME</strong> There has not been enough time to carry coffee cups from place to place
           before they get cold. But if all the coffee cups were somehow filled from a single coffee pot, all at the same
           time, that might explain their even temperature.
         </p>
-        <p>
+        <p class="info-description item-6">
           <strong>INFLATION</strong> solves this problem. The theory proposes that, less than a trillionth of a second
           after the Big Bang, the universe expanded faster than the speed of light. Tiny ripples in the violently
           expanding energy field eventually grew into the large-scale structures of the universe.
         </p>
-        <p>
+        <p class="info-description item-7">
           <strong>FLUCTUATION</strong> Astronomers have now detected evidence of these ancient fluctuations in swirls of
           polarized light in the cosmic background radiation, which is energy left over from the early universe. These
           are gravitational waves predicted by Einstein.
         </p>
-        <p>
+        <p class="info-description item-8">
           <strong>EXPANSION</strong> Returning to our coffee, imagine a single, central pot expanding faster than light
           and cooling to an even temperature as it expands. That is something like inflation. And the structure of the
           universe mirrors the froth and foam of the original pot.
@@ -264,17 +270,14 @@
       him the news.
     </p>
 
-    <article class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlfIVEy_YOA" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ZlfIVEy_YOA" title="YouTube video player" allowfullscreen></iframe>
       <footer class="video-footer">
-        <p>
+        <p class="caption">
           Stanford Professor Andrei Linde celebrates physics breakthrough <small>Video by StanfordUniversity</small>
         </p>
       </footer>
-    </article>
+    </div>
 
     <p>
       Confused, Dr. Linde called out to his wife, asking if she had ordered anything.
@@ -341,11 +344,11 @@
       “The South Pole is the closest you can get to space and still be on the ground,” Dr. Kovac said. He has been there
       23 times, he said, wintering over in 1994. “I’ve been hooked ever since,” he said.
     </p>
-    <figure>
+    <figure class="small">
       <img
         src="https://static01.nyt.com/images/2014/03/18/science/space/18cosmos-2/18cosmos-2-superJumbo.jpg?quality=90&auto=webp"
         alt="">
-      <figcaption>
+      <figcaption class="caption">
         The Bicep2 telescope, in the foreground, was used to detect the faint spiraling gravity patterns — the signature
         of a universe being wrenched violently apart at its birth <small>Steffen Richter/Associated Press</small>
       </figcaption>
@@ -436,35 +439,345 @@
     </p>
 
     <div class="bottom-article">
-      <p>
+      <p class="paper-message">
         A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the
-        headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a href="">Order Reprints</a> | <a href="">Today’s Paper</a> | <a href="">Subscribe</a>
+        headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a href="#">Order Reprints</a> | <a href="#">Today’s
+          Paper</a> | <a href="#">Subscribe</a>
       </p>
       <div class="share-container-bottom">
-        <button>read 000 comments</button>
+        <button class="btn-user">read 000 comments</button>
         <nav class="share-navbar">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-whatsapp"></i></a>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fas fa-envelope"></i></a>
-          <a href=""><i class="fas fa-share"></i></a>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fas fa-share"></i></a></li>
+          </ul>
         </nav>
       </div>
     </div>
 
-    <div class="subscribre-messge">
-      <p>
+    <div class="subscribe-message">
+      <p class="message-1">
         We hope you enjoyed this free article.
       </p>
-      <p>
+      <p class="message-2">
         Subcribers make stories like this possible.
       </p>
-      <button>Subcribe for &euro;0.50 a week</button>
-      <p>
+      <button class="btn-subscribe">Subcribe for &euro;0.50 a week</button>
+      <p class="message-3">
         Limited time offer. Cancel anytime.
       </p>
     </div>
   </article>
+
+  <footer class="grid">
+    <section class="category-footer">
+      <h2><a href="#">More in Space and AStronomy</a></h2>
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/27/autossell/27SCI-OUTTHERE-WEATHER-loop1cover/27SCI-OUTTHERE-WEATHER-loop1cover-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Image by NASA/CSFC/SDO
+          </figcaption>
+
+        </figure>
+        <h2>Will the Next Space-Wheater Season Be Stormy or Fair</h2>
+        <time datetime="15:00">5h ago</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/25/science/00SCI-OUTTHERE-NAMES-image/00SCI-OUTHERE-NAMES-image-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Image by NASA, ESA, and D. Coe, J. Anderson, and R. van der Marel (STScl);Adrienne McCann
+          </figcaption>
+        </figure>
+        <h2>What to Name a Bunch of Black Holes? You Had Some Ideas.</h2>
+        <time datetime="2021-05-27">May 27</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/26/science/26SPACETOURISM1/26SPACETOURISM1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Nasa, via Agence France-Presse -- Getty Images
+          </figcaption>
+        </figure>
+        <h2>Astronauts on Set: Space Station May Host Wave of TV Shows and Films</h2>
+        <time datetime="2021-05-26">May 26</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/20/us/00SpaceX-Texasborder-1/00SpaceX-Texasborder-1-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Christopher Lee for The New York Times
+          </figcaption>
+        </figure>
+        <h2>A Serene Shore Resort, Except for the SpaceX 'Ball of Fire'</h2>
+        <time datetime="2021-05-26">May 26</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/20/world/00sweden-space09/00sweden-space09-threeByTwoSmallAt2X-v5.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Newsha Tavaholian for The New York Times
+          </figcaption>
+        </figure>
+        <h2>IN Sweden¡s Far North, a Space Complex Takes Shape</h2>
+        <time datetime="2021-05-24">May 24</time>
+      </article>
+    </section>
+    <section class="popular">
+      <h2><a href="#">Most Popular</a></h2>
+      <div>
+        <a href="#">Former Astronaut Pleads Guilty in Crash That Killed 2 Young Girls</a>
+      </div>
+      <div>
+        <a href="#">Opinion: Scenes From a Mogul’s Marriage or: The Troubling Fourth Act of Bill Gates</a>
+      </div>
+      <div>
+        <a href="#">Paul Ryan Critiques Trump’s Grip on the Republican Party</a>
+      </div>
+      <div>
+        <a href="#">Canadian Lawmaker Is Exposed on Camera for a Second Time</a>
+      </div>
+      <div>
+        <a href="#">Man Rescued in Colorado Mountain Pass Is Accused in 1982 Murders</a>
+      </div>
+      <div>
+        <a href="#">Stephen Colbert Parodies Brian Kemp’s Version of the National Anthem</a>
+      </div>
+      <div>
+        <a href="#">How a Cozy Neighborhood Restaurant Became a Celebrity Hide-Out</a>
+      </div>
+      <div>
+        <a href="#">When a Two-Week Stay Becomes a Permanent Move</a>
+      </div>
+      <div>
+        <a href="#">Decluttering for a Renovation</a>
+      </div>
+      <div>
+        <a href="#">Opinion: Covid’s Deadliest Phase May Be Here Soon</a>
+      </div>
+    </section>
+    <section class="editor-footer">
+      <h2>Editors’ Picks</h2>
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/26/arts/26friends/26friends-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Terence Patrick/HBO Max
+          </figcaption>
+        </figure>
+        <h2>‘Friends’ Reunion: The One With the ‘Remember the One With … ?’</h2>
+        <time datetime="20:00">1h ago</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/28/arts/26arthurjafa-11NEW/26arthurjafa-11NEW-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Lelanie Foster for The New York Times
+          </figcaption>
+        </figure>
+        <h2>At His Moment of Triumph, Arthur Jafa Is Looking for Trouble</h2>
+        <time datetime="2021-05-27">May 27</time>
+      </article>
+
+      <article class="article-item">
+        <figure>
+          <a href="#">
+            <img
+              src="https://static01.nyt.com/images/2021/05/30/nyregion/30nyc-rollerskate1/merlin_187278312_363e250b-7284-484a-842c-39bb639b29c1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              alt="">
+          </a>
+          <figcaption>
+            Brittainy Newman for The New York Times
+          </figcaption>
+        </figure>
+        <h2>New Yorkers Are Crazy About Roller-Skating (Again)</h2>
+        <time datetime="2021-05-26">May 26</time>
+      </article>
+    </section>
+
+    <nav class="footer-navbar">
+      <div class="title-container">
+        <div>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/The_New_York_Times_Logo.svg" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="#">Go to Home Page »</a>
+        </div>
+      </div>
+      <div class="column-navbar">
+        <h2>news</h2>
+        <ul>
+          <li><a href="#">Home Page</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Coronavirus</a></li>
+          <li><a href="#">U.S.</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">New York</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Obituaries</a></li>
+          <li><a href="#">Today's Paper</a></li>
+          <li><a href="#">Corrections</a></li>
+          <li><a href="#">Trending</a></li>
+        </ul>
+      </div>
+
+      <div class="column-navbar">
+        <h2>opinion</h2>
+        <ul>
+          <li><a href="#">Today’s Opinion</a></li>
+          <li><a href="#">Columnists</a></li>
+          <li><a href="#">Editorials</a></li>
+          <li><a href="#">Guest Essays</a></li>
+          <li><a href="#">Letters</a></li>
+          <li><a href="#">Sunay Review</a></li>
+          <li><a href="#">Video: Opinion</a></li>
+        </ul>
+      </div>
+
+      <div class="column-navbar">
+        <h2>arts</h2>
+        <ul>
+          <li><a href="#">Today’s Arts</a></li>
+          <li><a href="#">Art & Design</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Best Sellers Book List</a></li>
+          <li><a href="#">Dance</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Pop Culture</a></li>
+          <li><a href="#">Television</a></li>
+          <li><a href="#">Theater</a></li>
+          <li><a href="#">Video: Arts</a></li>
+        </ul>
+      </div>
+
+      <div class="column-navbar">
+        <h2>living</h2>
+        <ul>
+          <li><a href="#">At Home</a></li>
+          <li><a href="#">Automotive</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Love</a></li>
+          <li><a href="#">Magazine</a></li>
+          <li><a href="#">Parenting</a></li>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Style</a></li>
+          <li><a href="#">T Magazine</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </div>
+
+      <div class="column-navbar">
+        <h2>more</h2>
+        <ul>
+          <li><a href="#">Reader Center</a></li>
+          <li><a href="#">Wirecutter</a></li>
+          <li><a href="#">Cooking</a></li>
+          <li><a href="#">Live Events</a></li>
+          <li><a href="#">The Learning Network</a></li>
+          <li><a href="#">Tools & Services</a></li>
+          <li><a href="#">Podcasts</a></li>
+          <li><a href="#">Multimedia</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">TimesMachine</a></li>
+          <li><a href="#">NYT Store</a></li>
+          <li><a href="#">Manage My Account</a></li>
+          <li><a href="#">NYTLicensing</a></li>
+        </ul>
+      </div>
+
+      <div class="column-navbar">
+        <h2>subscribe</h2>
+        <ul>
+          <li><a href="#">Home Delivery</a></li>
+          <li><a href="#">Digital Subscriptions</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Cooking</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Email Newsletters</a></li>
+          <li><a href="#">Corporate Subscriptions</a></li>
+          <li><a href="#">Education Rate</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Mobile Applications</a></li>
+          <li><a href="#">Replica edition</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Canada</a></li>
+          <li><a href="#">Español</a></li>
+          <li><a href="#">中文网</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">&copy; 2021 The New York Times Company</a></li>
+          <li><a href="#">NYTCo</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Work with us</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">T Brand Studio</a></li>
+          <li><a href="#">Your Ad Choices</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Terms of Sale</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Subscriptions</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
 
 
 </body>

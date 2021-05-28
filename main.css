@@ -1,3 +1,16 @@
+:root{
+  --grey-header:hsl(0, 0%, 85%);
+  --grey-divider: hsl(0, 0%, 90%);
+  --grey-text: hsl(0, 0%, 30%);
+  --black-light: hsl(0, 0%, 15%);
+  --bluegreen-ish: hsl(202, 41%, 45%);
+  --bluegreen-ish-dark: hsl(202, 41%, 35%);
+  --btn-white: #fafafa;
+  --text-article: Georgia, 'Times New Roman', Times, serif;
+  --page-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -59,6 +72,20 @@ html{
 }
 
 
+/* GENERAL */
+
+img{
+  max-width: 100%;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+strong{
+  font-weight: 800;
+}
+
 /* HEADER PAGE */
 
 .main-header{
@@ -67,8 +94,8 @@ html{
   gap: 10px;
   align-items: center;
   padding: 5px 7.5%;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  border-bottom: 1px solid hsl(0, 0%, 90%);
+  font-family: var(--page-font);
+  border-bottom: 1px solid var(--grey-header);
 }
 
 .main-header .btn-navigation{
@@ -80,10 +107,10 @@ html{
   padding: 5px 10px;
 }
 .main-header .btn-navigation:hover{
-  background: #fafafa;
+  background: var(--btn-white);
 }
 
-.main-header .section-link{
+.main-header .category-link{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -100,14 +127,418 @@ html{
   width: 200px;
 }
 
-.main-header .btn-auth {
+/* Buttons */
+
+.btn-user {
   padding: 8px 15px;
-  border: 1px solid rgb(61, 116, 148);
+  border: 1px solid var(--bluegreen-ish-dark);
   border-radius: 5px;
   box-shadow: 0 0 4px  rgba(0,0,0,0.1);
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 800;
-  background: rgb(66, 123, 156);
-  color: #fafafa;
+  background: var(--bluegreen-ish);
+  color: var(--btn-white);
+  transition: .3s;
+}
+
+.btn-user:hover {
+  background:var(--bluegreen-ish-dark);
+  border: 1px solid var(--bluegreen-ish);
+}
+
+.bottom-article .btn-user{
+  font-size: 14px;
+}
+
+/* Article content */
+
+.grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 3fr 6fr 2fr;
+  gap: 20px 0;
+  margin: 75px auto;
+  font-family: var(--text-article);
+}
+
+.grid > * {
+  grid-column: 2 / -2;
+}
+
+.grid > p {
+  color: var(--black-light);
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.grid > p a{
+  color:var(--bluegreen-ish);
+}
+.grid > p a:hover{
+  text-decoration: none;
+}
+
+.grid > figure, .grid > .info-section{
+  grid-column: 1 / -1;
+}
+
+.article-title{
+  font-style: italic;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid var(--grey-divider);
+}
+
+/* NAVBAR SOCIALS */
+
+.share-navbar ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.share-navbar a {
+  padding: 5px 7px;
+  border: 1px solid hsl(0, 0%, 92%);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background: hsl(0, 0%, 92%);
+}
+
+.share-navbar a:hover {
+  background: none;
+  border: 1px solid var(--grey-header);
+}
+
+.share-navbar .link-icon-alt{
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+}
+
+.share-navbar .link-icon-alt:hover{
+  border: none;
+  color: hsl(0, 0%, 75%);
+}
+
+/* Images and caption */
+
+figure{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 25px 0;
+}
+
+figure img {
+  grid-column: 1 / -1;
+}
+
+.small{
+  padding: 0 10rem;
+}
+
+.caption{
+  margin-top: .75em;
+  line-height: 1.25em;
+  font-size: 16px;
+  color: var(--grey-text);
+}
+
+.caption small{
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+}
+
+.author, .author a{
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.author a{
+  text-decoration: underline  hsl(0, 0%, 75%) 1px;
+}
+
+.author a:hover{
+  text-decoration: none;
+}
+
+.published-date {
+  font-size: 12px;
+  font-family: var(--page-font);
+  color: hsl(0, 0%, 20%);
+}
+
+/* sign up message (paragraph divider) */
+
+.sing-up-divider  {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  padding: 15px 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--grey-divider);
+  font-size: 16px;
+  color: hsl(0, 0%, 20%);
+}
+.sing-up-divider strong {
+  text-transform: uppercase;
+  font-family: var(--page-font);
+  font-size: 14px;
+}
+
+.sing-up-divider button {
+  border: 1px solid black;
+  border-radius: 2px;
+  background: none;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  transition: .3s;
+}
+
+.sing-up-divider button:hover{
+  color: white;
+  background: black;
+}
+
+/* side panel (Editor's Pcks) */
+
+.side-recommendations {
+  grid-column: span 1 / -1;
+  grid-row: span 2;
+  align-self: start;
+  display: grid;
+  gap: 15px;
+  padding-left: 1em;
+}
+.side-recommendations .side-recommendations-header{
+  font-family: var(--page-font);
+  font-weight: 800;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey-header);
+
+}
+
+.side-recommendations article {
+  display: grid;
+  grid-template-columns: 75px auto;
+  align-items: center;
+}
+
+.side-recommendations .side-recommendations-item-title {
+  margin-left: 5px;
+  font-size: 14px;
+  color: hsl(0, 0%, 25%);
+}
+
+.subscribe-divider {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+  font-family: var(--page-font);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.subscribe-divider:before, .subscribe-divider:after{
+  display: block;
+  content: '';
+  height: 1px;
+  width: 40%;
+  background: var(--grey-divider);
+  margin: 15px 0;
+}
+.subscribe-divider a {
+  color: var(--bluegreen-ish);
+  text-decoration: none;
+}
+
+/* infographic */
+.info-section{
+  display: grid;
+  gap: 10px 0;
+  grid-template-rows: repeat(4, auto);
+  padding: 0 7rem;
+  margin: 20px 0;
+}
+
+.info-title{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.info-subtitle{
+  font-size: 15px;
+  line-height: 1.25rem;
+  color: var(--grey-text);
+}
+
+.info-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.info-picture{
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.info-description{
+  z-index: 1;
+  font-family: var(--page-font);
+  font-size: 12px;
+  line-height: 1.1rem;
+}
+
+.info-description strong {
+  font-size: 14px;
+  margin-right: .75rem;
+}
+
+.info-description.item-1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.info-description.item-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.info-description.item-3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.info-description.item-4{
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.info-description.item-5 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.info-description.item-6 {
+  grid-column: 2;
+  grid-row: 4;
+}
+.info-description.item-7 {
+  grid-column: 3;
+  grid-row: 4;
+}
+.info-description.item-8{
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.info-footer{
+  font-family: var(--page-font);
+  font-size: 14px;
+  color: var(--grey-text);
+}
+.info-footer::before{
+  display: block;
+  content: '';
+  height: 1px;
+  width: 7.5%;
+  background: black;
+  margin: 20px 0;
+}
+
+/* Youtube video */
+
+.video-container{
+  margin: 25px 0;
+}
+
+.video-container iframe {
+  width: 650px;
+  height: 366px;
+}
+
+/* bottom section of the article */
+
+.bottom-article{
+  display: grid;
+  gap: 20px;
+}
+
+.paper-message, .paper-message a{
+  font-family: var(--page-font);
+  font-size: 12px;
+  color: var(--grey-text);
+  line-height: 1.2rem;
+}
+
+.paper-message a:hover{
+  text-decoration: none;
+}
+
+.share-container-bottom{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+
+}
+
+.share-container-bottom .share-navbar{
+  justify-self: end;
+}
+
+/* SUBSCRIBE MESSAGE */
+
+.subscribe-message{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--page-font);
+}
+
+.subscribe-message .message-1 {
+  font-weight: 800;
+  font-size: 14px;
+}
+.subscribe-message .message-2 {
+  max-width: 75%;
+  font-family: var(--text-article);
+  font-size: 44px;
+  text-align: center;
+}
+
+.subscribe-message .message-3{
+  font-size: 14px;
+  color: var(--black-light);
+}
+
+.btn-subscribe{
+  padding: 10px 80px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  font-weight: 800;
+  font-size: 14px;
+  color: white;
+  background: black;
+}
+
+/* PAGE FOOTER */
+
+footer.grid{
+
 }
