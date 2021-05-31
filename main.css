@@ -88,6 +88,14 @@ strong{
 
 /* HEADER PAGE */
 
+.header-wrapper{
+  display: block;  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .main-header{
   display: grid;
   grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
@@ -96,6 +104,7 @@ strong{
   padding: 5px 7.5%;
   font-family: var(--page-font);
   border-bottom: 1px solid var(--grey-header);
+  background: white;
 }
 
 .main-header .btn-navigation{
